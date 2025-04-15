@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Furniture Placement</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS will be placed here for single-file solution */
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-couch"></i>
+                <span>AR Furnish</span>
+            </div>
+            <nav>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul id="navMenu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                    <li><a href="#furniture" class="nav-link">Furniture</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Visualize Furniture in Your Space with AR</h1>
+            <p>Try before you buy with our augmented reality technology. See how furniture fits and looks in your home before making a purchase.</p>
+            <a href="#furniture" class="btn btn-primary">Browse Furniture</a>
+            <a href="#how-it-works" class="btn">How It Works</a>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <h2 class="section-title">How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Choose Your Furniture</h3>
+                <p>Browse our extensive collection of high-quality furniture items from top brands.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>View in AR</h3>
+                <p>Tap the "View in AR" button to launch the augmented reality viewer.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Place in Your Space</h3>
+                <p>Use your phone's camera to place the furniture in your room and see how it fits.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Furniture Gallery -->
+    <section class="furniture-gallery" id="furniture">
+        <div class="gallery-container">
+            <h2 class="section-title">Our Furniture Collection</h2>
+            <div class="category-tabs">
+                <button class="tab-btn active">All</button>
+                <button class="tab-btn">Living Room</button>
+                <button class="tab-btn">Bedroom</button>
+                <button class="tab-btn">Dining</button>
+                <button class="tab-btn">Office</button>
+                <button class="tab-btn">Outdoor</button>
+            </div>
+            <div class="furniture-grid">
+                <!-- Furniture Item 1 -->
+                <div class="furniture-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Modern Sofa">
+                        <div class="card-badge">Popular</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Modern Sofa</h3>
+                        <p>Comfortable 3-seater sofa with premium fabric</p>
+                        <div class="card-price">₹49,999</div>
+                        <div class="card-actions">
+                            <button class="card-btn view-ar">View in AR</button>
+                            <button class="card-btn add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Furniture Item 2 -->
+                <div class="furniture-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Dining Table">
+                    </div>
+                    <div class="card-content">
+                        <h3>Oak Dining Table</h3>
+                        <p>Solid oak table with extension leaf</p>
+                        <div class="card-price">₹32,499</div>
+                        <div class="card-actions">
+                            <button class="card-btn view-ar">View in AR</button>
+                            <button class="card-btn add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Furniture Item 3 -->
+                <div class="furniture-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Bookshelf">
+                        <div class="card-badge">New</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Modular Bookshelf</h3>
+                        <p>Customizable shelving unit in walnut finish</p>
+                        <div class="card-price">₹18,999</div>
+                        <div class="card-actions">
+                            <button class="card-btn view-ar">View in AR</button>
+                            <button class="card-btn add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Furniture Item 4 -->
+                <div class="furniture-card">
+                    <div class="card-image">
+                        <img src="./assets/images/velvet_armchair" alt="Armchair">
+                    </div>
+                    <div class="card-content">
+                        <h3>Velvet Armchair</h3>
+                        <p>Luxurious emerald green velvet armchair</p>
+                        <div class="card-price">₹14,799</div>
+                        <div class="card-actions">
+                            <button class="card-btn view-ar">View in AR</button>
+                            <button class="card-btn add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Furniture Item 5 -->
+                <div class="furniture-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1517705008128-361805f42e86?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Modern Chair">
+                    </div>
+                    <div class="card-content">
+                        <h3>Modern Accent Chair</h3>
+                        <p>Sleek design with premium upholstery</p>
+                        <div class="card-price">₹12,499</div>
+                        <div class="card-actions">
+                            <button class="card-btn view-ar">View in AR</button>
+                            <button class="card-btn add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Furniture Item 6 -->
+                <div class="furniture-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Luxury Bed">
+                        <div class="card-badge">Best Seller</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Luxury King Bed</h3>
+                        <p>Premium upholstered bed with storage</p>
+                        <div class="card-price">₹65,999</div>
+                        <div class="card-actions">
+                            <button class="card-btn view-ar">View in AR</button>
+                            <button class="card-btn add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Furniture Item 7 -->
+                <div class="furniture-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Office Desk">
+                    </div>
+                    <div class="card-content">
+                        <h3>Executive Office Desk</h3>
+                        <p>Spacious workstation with cable management</p>
+                        <div class="card-price">₹28,799</div>
+                        <div class="card-actions">
+                            <button class="card-btn view-ar">View in AR</button>
+                            <button class="card-btn add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Furniture Item 8 -->
+                <div class="furniture-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Outdoor Set">
+                    </div>
+                    <div class="card-content">
+                        <h3>Outdoor Lounge Set</h3>
+                        <p>Weather-resistant wicker furniture set</p>
+                        <div class="card-price">₹42,999</div>
+                        <div class="card-actions">
+                            <button class="card-btn view-ar">View in AR</button>
+                            <button class="card-btn add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AR Preview Section -->
+    <section class="ar-preview" id="ar-preview">
+        <div class="ar-container">
+            <div class="ar-content">
+                <h2>Experience Furniture in Your Space</h2>
+                <p>Our augmented reality technology allows you to place life-size 3D models of furniture in your home using just your smartphone camera. See how pieces fit with your existing decor and make confident purchasing decisions.</p>
+                <div class="ar-features">
+                    <div class="ar-feature">
+                        <i class="fas fa-ruler-combined"></i>
+                        <span>Accurate measurements</span>
+                    </div>
+                    <div class="ar-feature">
+                        <i class="fas fa-palette"></i>
+                        <span>Multiple color options</span>
+                    </div>
+                    <div class="ar-feature">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Works on any smartphone</span>
+                    </div>
+                </div>
+                <a href="#furniture" class="btn btn-primary">Try It Now</a>
+            </div>
+            <div class="ar-visual">
+                <div class="phone-mockup">
+                    <img src="./assets/images/mobile_view" alt="Phone Mockup">
+                    <div class="screen"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="testimonial-container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonial-slider">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        The AR feature helped me visualize how this sofa would look in my Mumbai apartment. Saved me from buying something too large for my space!
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Priya K." class="author-avatar">
+                        <div class="author-info">
+                            <h4>Priya K.</h4>
+                            <p>Mumbai</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        As an interior designer in Delhi, I use this AR feature with all my clients. It helps them make confident decisions about furniture purchases.
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Rahul S." class="author-avatar">
+                        <div class="author-info">
+                            <h4>Rahul S.</h4>
+                            <p>Delhi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        The velvet armchair looked perfect in my Bangalore home through the AR view, and it looks even better in person! Excellent quality.
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Ananya M." class="author-avatar">
+                        <div class="author-info">
+                            <h4>Ananya M.</h4>
+                            <p>Bangalore</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="cta">
+        <div class="cta-container">
+            <h2>Ready to Transform Your Space?</h2>
+            <p>Join thousands of happy Indian customers who have found their perfect furniture using our AR technology.</p>
+            <div class="cta-buttons">
+                <a href="#furniture" class="btn btn-primary">Browse Furniture</a>
+                <a href="#" class="btn">Download App</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <i class="fas fa-couch"></i>
+                    <span>AR Furnish</span>
+                </div>
+                <p>Revolutionizing furniture shopping with augmented reality technology.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#furniture">Furniture</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Living Room</a></li>
+                    <li><a href="#">Bedroom</a></li>
+                    <li><a href="#">Dining</a></li>
+                    <li><a href="#">Office</a></li>
+                    <li><a href="#">Outdoor</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get updates on new arrivals and special offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+                <p>We respect your privacy. Unsubscribe at any time.</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 AR Furnish. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                const navMenu = document.getElementById('navMenu');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Mobile menu toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        });
+
+        // Set AR preview screen image
+        document.querySelector('.screen').style.backgroundImage = "url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')";
+    </script>
+</body>
+</html>
